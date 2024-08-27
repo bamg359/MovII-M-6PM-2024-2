@@ -35,7 +35,7 @@ public class Costumer extends User {
 
         ArrayList<Object>  user = new ArrayList<>();
 
-        System.out.println("Ingrese el tipo de costumer");
+        System.out.println("Ingrese el tipo de costumer en el sistema");
         costumerType = sc.nextLine();
         user.add(idUser);
         user.add(userName);
