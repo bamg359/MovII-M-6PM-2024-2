@@ -1,6 +1,10 @@
 package domain;
 
+import java.util.Scanner;
+
 public class UserType {
+
+    Scanner sc = new Scanner(System.in);
 
     private int idType;
     private String typeName;
@@ -38,6 +42,14 @@ public class UserType {
     // Metodos
 
     public void createUserType(){
+
+        System.out.println("INgrese el id");
+        idType = sc.nextInt();
+
+        sc.nextLine();
+
+        System.out.println("INgrese el nombre del tipo de cliente");
+        typeName = sc.nextLine();
 
     }
 

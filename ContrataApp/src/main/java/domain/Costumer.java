@@ -26,25 +26,28 @@ public class Costumer extends User {
         this.costumerType = costumerType;
     }
 
-    List<ArrayList<Object>> users = new ArrayList<>();
+    //LinkedHashSet users = new LinkedHashSet<ArrayList<Object>>();
+
+    List<List<Object>> users = new ArrayList<>();
 
 
     @Override
     public void createUser() {
+
+        ArrayList<Object>  user = new ArrayList<Object>();
         super.createUser();
-
-        ArrayList<Object>  user = new ArrayList<>();
-
         System.out.println("Ingrese el tipo de costumer en el sistema");
         costumerType = sc.nextLine();
+
+
         user.add(idUser);
         user.add(userName);
         user.add(email);
-        String userTypeCost =userType.getTypeName();
-        user.add(userTypeCost);
+        user.add(userType.getTypeName());
         user.add(costumerType);
 
         users.add(user);
+
     }
 
     @Override

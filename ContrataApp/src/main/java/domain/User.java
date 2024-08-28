@@ -160,7 +160,6 @@ public abstract class User implements UtilUser {
 
 
 
-
     }
 
     @Override
