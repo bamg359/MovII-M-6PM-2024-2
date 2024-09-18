@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "669075313642",
+    "project_id": "mypersonallibrary-c0fb2",
+    "storage_bucket": "mypersonallibrary-c0fb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669075313642:android:a13cf128b6516de2201893",
+        "android_client_info": {
+          "package_name": "com.genericlibrary.personal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHOZDZStwO-yNvT04EEekSDex7oIeMGEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669075313642:android:020cb3f2c95dbdbd201893",
+        "android_client_info": {
+          "package_name": "com.mypersonallibrary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHOZDZStwO-yNvT04EEekSDex7oIeMGEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
