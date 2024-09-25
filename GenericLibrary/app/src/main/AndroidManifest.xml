@@ -13,6 +13,12 @@
         android:theme="@style/Theme.GenericLibrary"
         tools:targetApi="31">
         <activity
+            android:name=".UserData"
+            android:exported="false" />
+        <activity
+            android:name=".DashBoard"
+            android:exported="false" />
+        <activity
             android:name=".Registro"
             android:exported="false" />
         <activity
