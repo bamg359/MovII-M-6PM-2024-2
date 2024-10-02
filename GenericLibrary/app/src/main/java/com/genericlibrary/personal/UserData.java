@@ -76,8 +76,8 @@ public class UserData extends AppCompatActivity {
 
                 if(snapshot.exists()){
 
-                    //int id = snapshot.child(identificacion).getValue(Integer.class);
-                    //mostrarIdUsuario.setText("Id: " + id);
+                    String id = inputIdUsuario.getText().toString();
+                    mostrarIdUsuario.setText("Id: " + id);
 
                     String nombre = snapshot.child("Name").getValue(String.class);
                     mostrarNombreUsuario.setText("Nombre: "+ nombre);

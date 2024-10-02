@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GenericLibrary"
         tools:targetApi="31">
         <activity
+            android:name=".InicioSesion"
+            android:exported="false" />
+        <activity
             android:name=".UserData"
             android:exported="false" />
         <activity
