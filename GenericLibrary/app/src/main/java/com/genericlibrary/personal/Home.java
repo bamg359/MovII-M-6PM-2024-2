@@ -23,6 +23,14 @@ public class Home extends AppCompatActivity {
         btnInicioSesion = findViewById(R.id.btn_ir_inicio_sesion);
 
 
+        btnInicioSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irIniciosesion();
+            }
+        });
+
+
         btnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +48,9 @@ public class Home extends AppCompatActivity {
     }
 
     public void irIniciosesion(){
-        Intent intent = new Intent();
+
+        Intent intent = new Intent(this, DashBoard.class);
+        startActivity(intent);
     }
 
 

@@ -4,6 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BDC5F2"
     tools:context=".UserData">
 
+    <TextView
+        android:id="@+id/tag_datos_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Datos Usuario"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_volver_dashboard_1" />
+
+    <TextView
+        android:id="@+id/txt_data_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginBottom="154dp"
+        android:hint="Identificacion"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_data_correo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tag_datos_usuario" />
+
+    <TextView
+        android:id="@+id/txt_data_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="25dp"
+        android:hint="Nombre"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_data_id"
+        app:layout_constraintTop_toBottomOf="@+id/txt_data_id" />
+
+    <TextView
+        android:id="@+id/txt_data_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="13dp"
+        android:hint="Apellido"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_data_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/txt_data_nombre" />
+
+    <TextView
+        android:id="@+id/txt_data_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="14dp"
+        android:hint="Correo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_data_telefono"
+        app:layout_constraintStart_toStartOf="@+id/txt_data_telefono" />
+
+    <TextView
+        android:id="@+id/txt_data_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:hint="Teléfono"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_buscar_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_buscar_id"
+        android:layout_width="217dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Identificacion"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_buscar_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_buscar_usuario"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#8DA656"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_volver_dashboard_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="#8DA656"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
