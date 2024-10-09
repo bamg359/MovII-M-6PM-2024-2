@@ -49,7 +49,7 @@ public class Home extends AppCompatActivity {
 
     public void irIniciosesion(){
 
-        Intent intent = new Intent(this, DashBoard.class);
+        Intent intent = new Intent(this, InicioSesion.class);
         startActivity(intent);
     }
 
